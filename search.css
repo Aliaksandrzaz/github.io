@@ -1,0 +1,161 @@
+#search_form {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 24px;
+    border-top: 1px solid #cfcfcf;
+    border-right: 1px solid #cfcfcf;
+    padding: 4px 8px 4px 23px;
+    background: url(img/search.png) no-repeat scroll 5px 7px #f6f6f6
+}
+
+#search_form p {
+    display: none;
+    line-height: 24px;
+    padding-left: 7px;
+    position: relative;
+    top: -16px;
+    color: #666;
+    font-size: 15px;
+}
+
+#search_form div {
+    padding: 2px 0 0 7px
+}
+
+#search_form.closed {
+    cursor: pointer;
+    border-radius: 0 5px 0 0
+}
+
+#search_form.closed div {
+    display: none
+}
+
+#search_form.closed:hover p {
+    display: block
+}
+
+#search_form button {
+    background: url("") no-repeat scroll 0 2px;
+    padding: 0 0 0 20px;
+    border: 0;
+    line-height: 20px;
+    color: #000;
+    margin: 0 10px
+}
+
+#search_form #search_next,
+#search_form #search
+{
+    background-image: url(img/search_next.png)
+}
+
+#search_form #search_prev {
+    background-image: url(img/search_prev.png)
+}
+
+#search_form #search_cancel {
+    background-image: url(img/search_close.png)
+}
+
+#search_form button:hover,#search_form button:focus {
+    color: #9a1616
+}
+
+#search_form span {
+    color: #444;
+    margin: 0 10px;
+    line-height: 20px
+}
+
+#search_form input {
+    position: relative;
+    vertical-align: top
+}
+
+.ie7 #search_form span {
+    line-height: 24px;
+    vertical-align: top;
+    zoom:1}
+
+.ie6 #search_form,.ie6 #search_preview {
+    display: none!important
+}
+
+#search_preview {
+    position: fixed;
+    bottom: 31px;
+    left: 0;
+    display: none;
+    background: #fff;
+    border: 1px solid #cfcfcf;
+    width: 600px;
+    z-index: 999
+}
+
+.open {
+    display: block!important;
+}
+
+.close {
+    display: none!important;
+}
+
+.open_controls {
+    display: flex!important;
+}
+
+#search_preview ul {
+    margin: 0;
+    padding: 10px
+}
+
+#search_preview ul li {
+    margin: 0;
+    padding: 10px;
+    border-top: 1px solid #cfcfcf;
+    cursor: pointer
+}
+
+#search_preview ul li:first-child {
+    border-top: 0
+}
+
+#search_preview ul li:hover {
+    background: #efefef
+}
+
+#search_preview p {
+    margin: 0;
+    padding: 20px
+}
+
+q {
+    background-color: #ffa;
+    border: 1px solid #9a1616;
+    margin: 0;
+    padding: 0;
+    border-radius: 3px;
+    font-size: inherit
+}
+
+.search_selected {
+    background-color: #9a1616;
+    color: #ff0;
+    text-shadow: none
+}
+
+.search_selected a {
+    color: #ff0
+}
+
+#popup #ethernatable {
+    width: 100%
+}
+
+#popup .text {
+    max-height: 500px;
+    max-width: 750px;
+    overflow-y: auto
+}
